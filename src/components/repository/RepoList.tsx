@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { repositoryApi } from '../../api/repositoryApi';
-import { Contributor } from '../../types';
+import type {Contributor} from '../../types';
 
 interface RepoListProps {
   owner: string;

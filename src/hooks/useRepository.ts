@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { repositoryApi } from '../api/repositoryApi';
-import { Repository } from '../types';
+import type {Repository} from '../types';
 
 export const useRepositories = () => {
   const [repositories, setRepositories] = useState<Repository[]>([]);

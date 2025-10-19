@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { dashboardApi } from '../api/dashboardApi';
-import { Dashboard } from '../types';
+import type {Dashboard} from '../types';
 
 export const useDashboard = (owner: string, repo: string, username: string) => {
   const [dashboard, setDashboard] = useState<Dashboard | null>(null);

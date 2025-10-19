@@ -1,6 +1,6 @@
 import React from 'react';
 import { GitBranch } from 'lucide-react';
-import { Repository } from '../../types';
+import type {Repository} from '../../types';
 
 interface RepoSelectorProps {
   repositories: Repository[];

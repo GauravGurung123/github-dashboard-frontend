@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { Repository, Contributor } from '../types';
+import React, { createContext, useContext, useState, type ReactNode } from 'react';
+import type {Repository, Contributor} from '../types';
 
 interface RepositoryContextType {
   selectedRepo: Repository | null;

@@ -5,7 +5,7 @@ import { RepoSelector } from '../components/repository/RepoSelector';
 import { Loading } from '../components/common/Loading';
 import { useRepositories } from '../hooks/useRepository';
 import { useRepository } from '../context/RepositoryContext';
-import { Repository } from '../types';
+import type {Repository} from '../types';
 
 export const RepositorySelect: React.FC = () => {
   const navigate = useNavigate();

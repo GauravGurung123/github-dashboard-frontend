@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Navbar } from '../components/common/Navbar';
 import { RepoList } from '../components/repository/RepoList';
 import { useRepository } from '../context/RepositoryContext';
-import { Contributor } from '../types';
+import type {Contributor} from '../types';
 
 export const RepositoryDetail: React.FC = () => {
   const { owner, repo } = useParams<{ owner: string; repo: string }>();
