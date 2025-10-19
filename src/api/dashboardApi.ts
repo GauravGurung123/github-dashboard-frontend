@@ -1,5 +1,5 @@
 import { apiClient } from './client';
-import { Dashboard } from '../types';
+import {type Dashboard } from '../types';
 
 export const dashboardApi = {
   async getDashboard(owner: string, repo: string, username: string): Promise<Dashboard> {

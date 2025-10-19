@@ -16,7 +16,7 @@ export const Home: React.FC = () => {
           Visualize contributor metrics and project insights with beautiful dashboards
         </p>
         <div className="space-x-4">
-          
+          <a
             href="http://localhost:8000/auth/login/github/"
             className="inline-block px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-lg font-semibold"
           >

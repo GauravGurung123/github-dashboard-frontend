@@ -1,5 +1,5 @@
 import { apiClient } from './client';
-import { Repository, Contributor } from '../types';
+import type {Repository, Contributor} from '../types';
 
 export const repositoryApi = {
   async getRepositories(): Promise<Repository[]> {

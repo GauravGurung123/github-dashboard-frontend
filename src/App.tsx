@@ -1,12 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { RepositoryProvider } from './context/RepositoryContext';
-import { Home } from './pages/Home';
-import { Login } from './pages/Login';
-import { RepositorySelect } from './pages/RepositorySelect';
-import { RepositoryDetail } from './pages/RepositoryDetail';
-import { Dashboard } from './pages/Dashboard';
-import { NotFound } from './pages/NotFound';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {RepositoryProvider} from './context/RepositoryContext';
+import {Home} from './pages/Home';
+import {Login} from './pages/Login';
+import {RepositorySelect} from './pages/RepositorySelect';
+import {RepositoryDetail} from './pages/RepositoryDetail';
+import {Dashboard} from './pages/Dashboard';
+import {NotFound} from './pages/NotFound';
 
 function App() {
   return (

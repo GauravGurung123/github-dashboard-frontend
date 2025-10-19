@@ -22,7 +22,7 @@ export const Navbar: React.FC<{ onBack?: () => void; showBack?: boolean }> = ({
                 ← Back
               </button>
             )}
-            
+            <a
               href="http://localhost:8000/auth/login/github/"
               className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
             >
