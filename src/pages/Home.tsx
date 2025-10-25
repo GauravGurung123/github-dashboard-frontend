@@ -8,8 +8,12 @@ export const Home: React.FC = () => {
 
     return (
         <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-4">
-            <div className="space-y-6 max-w-2xl w-full text-center bg-white/10 rounded-2xl shadow-lg p-10 backdrop-blur-md">
-                <GitBranch className="w-16 h-16 mx-auto mb-6 text-blue-400" />
+            <div
+                className="space-y-6 max-w-2xl w-full text-center bg-white/10 rounded-2xl shadow-lg p-10 backdrop-blur-md">
+                <div className="bg-green-500 text-white p-6 rounded-xl text-center text-2xl">
+                    Welcome to GitHub Dashboard!
+                </div>
+                <GitBranch className="w-16 h-16 mx-auto mb-6 text-blue-400"/>
                 <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-6 leading-relaxed">
                     GitHub Projects Dashboard
                 </h1>
