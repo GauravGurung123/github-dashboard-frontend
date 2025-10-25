@@ -2,8 +2,12 @@ import { apiClient } from './client';
 import {type Dashboard } from '../types';
 
 export const dashboardApi = {
-  async getDashboard(owner: string, repo: string, username: string): Promise<Dashboard> {
-    const response = await apiClient.get(`/dashboard/${owner}/${repo}/${username}/`);
+  async getDashboard(owner: string, repo: string, username: string, timeRange?: number): Promise<Dashboard> {
+    const params = new URLSearchParams();
+    if (timeRange) {
+      params.append('time_range', timeRange.toString());
+    }
+    const response = await apiClient.get(`/dashboard/${owner}/${repo}/${username}/?${params.toString()}`);
     return response.data;
   },
 

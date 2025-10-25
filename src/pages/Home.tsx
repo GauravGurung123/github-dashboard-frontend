@@ -23,7 +23,7 @@ export const Home: React.FC = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a
-                        href={GITHUB_LOGIN_URL}
+                        href={`${GITHUB_LOGIN_URL}`}
                         className="w-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-lg font-semibold text-center shadow-md"
                     >
                         Login with GitHub
